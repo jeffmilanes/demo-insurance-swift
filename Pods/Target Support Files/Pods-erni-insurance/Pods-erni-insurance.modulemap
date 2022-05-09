@@ -1,0 +1,6 @@
+framework module Pods_erni_insurance {
+  umbrella header "Pods-erni-insurance-umbrella.h"
+
+  export *
+  module * { export * }
+}

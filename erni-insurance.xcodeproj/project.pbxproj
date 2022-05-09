@@ -3,27 +3,97 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58E299B20E7CE6106E00F228 /* Pods_erni_insurance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E8E7EEA553381221CDEF95 /* Pods_erni_insurance.framework */; };
 		EBB788652822475F002BEEAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB788642822475F002BEEAD /* AppDelegate.swift */; };
-		EBB788672822475F002BEEAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB788662822475F002BEEAD /* SceneDelegate.swift */; };
-		EBB788692822475F002BEEAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB788682822475F002BEEAD /* ViewController.swift */; };
-		EBB7886C2822475F002BEEAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB7886A2822475F002BEEAD /* Main.storyboard */; };
 		EBB7886E28224762002BEEAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB7886D28224762002BEEAD /* Assets.xcassets */; };
 		EBB7887128224762002BEEAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB7886F28224762002BEEAD /* LaunchScreen.storyboard */; };
+		EBBF97B328259BF900AFD767 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBF97AF28259BF900AFD767 /* SearchCell.swift */; };
+		EBBF97B428259BF900AFD767 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBBF97B028259BF900AFD767 /* SearchView.xib */; };
+		EBBF97B528259BF900AFD767 /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBBF97B128259BF900AFD767 /* SearchCell.xib */; };
+		EBBF97B628259BF900AFD767 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBF97B228259BF900AFD767 /* SearchView.swift */; };
+		EBCB33882827F6880090D982 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB33872827F6880090D982 /* ApiRouter.swift */; };
+		EBCB338A2827F7840090D982 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB33892827F7840090D982 /* AppConfig.swift */; };
+		EBCDD1C42828A5300077432F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCDD1C32828A5300077432F /* UIViewController+Extension.swift */; };
+		EBCDD1C92828FA8C0077432F /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCDD1C82828FA8C0077432F /* OnboardingModel.swift */; };
+		EBCDD1CB2828FB4E0077432F /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCDD1CA2828FB4E0077432F /* OnboardingViewModel.swift */; };
+		EBD300022827565700876343 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD300012827565700876343 /* ApiService.swift */; };
+		EBD30004282757A200876343 /* InsuranceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD30003282757A200876343 /* InsuranceModel.swift */; };
+		EBD300062827584C00876343 /* InsuranceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD300052827584C00876343 /* InsuranceViewModel.swift */; };
+		EBD7664D2826E42A00E65BCB /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD766492826E42A00E65BCB /* DetailsCell.swift */; };
+		EBD7664E2826E42A00E65BCB /* DetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD7664A2826E42A00E65BCB /* DetailsView.xib */; };
+		EBD7664F2826E42A00E65BCB /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7664B2826E42A00E65BCB /* DetailsView.swift */; };
+		EBD766502826E42A00E65BCB /* DetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD7664C2826E42A00E65BCB /* DetailsCell.xib */; };
+		EBE60DE628238B9700D47EF4 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE60DE528238B9600D47EF4 /* AppColor.swift */; };
+		EBE60DEA28238C3000D47EF4 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE60DE928238C3000D47EF4 /* NavController.swift */; };
+		EBE60DED28238C6B00D47EF4 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE60DEC28238C6B00D47EF4 /* UIView+Extension.swift */; };
+		EBE60DEF28238CB000D47EF4 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE60DEE28238CB000D47EF4 /* UITextField+Extension.swift */; };
+		EBE60DF128238CD000D47EF4 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE60DF028238CD000D47EF4 /* UIImageView+Extension.swift */; };
+		EBE61E7228282BFC00DEF18D /* CoverageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE61E7128282BFC00DEF18D /* CoverageModel.swift */; };
+		EBE61E7428282F6E00DEF18D /* CoverageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE61E7328282F6E00DEF18D /* CoverageViewModel.swift */; };
+		EBE61E7628283B9900DEF18D /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE61E7528283B9900DEF18D /* SearchViewModel.swift */; };
+		EBF1EF752824CD19008A116D /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF1EF712824CD19008A116D /* OnboardingCell.swift */; };
+		EBF1EF762824CD19008A116D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF1EF722824CD19008A116D /* OnboardingView.swift */; };
+		EBF1EF772824CD19008A116D /* OnboardingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF1EF732824CD19008A116D /* OnboardingCell.xib */; };
+		EBF1EF782824CD19008A116D /* OnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF1EF742824CD19008A116D /* OnboardingView.xib */; };
+		EBF1EF7F2824CEB5008A116D /* HomeCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF1EF792824CEB5008A116D /* HomeCell2.swift */; };
+		EBF1EF802824CEB5008A116D /* HomeCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF1EF7A2824CEB5008A116D /* HomeCell2.xib */; };
+		EBF1EF812824CEB5008A116D /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF1EF7B2824CEB5008A116D /* HomeView.xib */; };
+		EBF1EF822824CEB5008A116D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF1EF7C2824CEB5008A116D /* HomeView.swift */; };
+		EBF1EF832824CEB5008A116D /* HomeCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF1EF7D2824CEB5008A116D /* HomeCell1.xib */; };
+		EBF1EF842824CEB5008A116D /* HomeCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF1EF7E2824CEB5008A116D /* HomeCell1.swift */; };
+		EBF1EF872824D27E008A116D /* DescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF1EF852824D27E008A116D /* DescriptionView.xib */; };
+		EBF1EF882824D27E008A116D /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF1EF862824D27E008A116D /* DescriptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		278E665822D37342972DF164 /* Pods-erni-insurance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-erni-insurance.release.xcconfig"; path = "Target Support Files/Pods-erni-insurance/Pods-erni-insurance.release.xcconfig"; sourceTree = "<group>"; };
+		65E8E7EEA553381221CDEF95 /* Pods_erni_insurance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_erni_insurance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B833EE2C29BB1D46B945BF87 /* Pods-erni-insurance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-erni-insurance.debug.xcconfig"; path = "Target Support Files/Pods-erni-insurance/Pods-erni-insurance.debug.xcconfig"; sourceTree = "<group>"; };
 		EBB788612822475F002BEEAD /* erni-insurance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "erni-insurance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB788642822475F002BEEAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EBB788662822475F002BEEAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EBB788682822475F002BEEAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EBB7886B2822475F002BEEAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBB7886D28224762002BEEAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBB7887028224762002BEEAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBB7887228224762002BEEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBBF97AF28259BF900AFD767 /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		EBBF97B028259BF900AFD767 /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		EBBF97B128259BF900AFD767 /* SearchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
+		EBBF97B228259BF900AFD767 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		EBCB33872827F6880090D982 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		EBCB33892827F7840090D982 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		EBCDD1C32828A5300077432F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		EBCDD1C82828FA8C0077432F /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		EBCDD1CA2828FB4E0077432F /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		EBD300012827565700876343 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		EBD30003282757A200876343 /* InsuranceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceModel.swift; sourceTree = "<group>"; };
+		EBD300052827584C00876343 /* InsuranceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceViewModel.swift; sourceTree = "<group>"; };
+		EBD766492826E42A00E65BCB /* DetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsCell.swift; sourceTree = "<group>"; };
+		EBD7664A2826E42A00E65BCB /* DetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsView.xib; sourceTree = "<group>"; };
+		EBD7664B2826E42A00E65BCB /* DetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		EBD7664C2826E42A00E65BCB /* DetailsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsCell.xib; sourceTree = "<group>"; };
+		EBE60DE528238B9600D47EF4 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		EBE60DE928238C3000D47EF4 /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
+		EBE60DEC28238C6B00D47EF4 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		EBE60DEE28238CB000D47EF4 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		EBE60DF028238CD000D47EF4 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		EBE61E7128282BFC00DEF18D /* CoverageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverageModel.swift; sourceTree = "<group>"; };
+		EBE61E7328282F6E00DEF18D /* CoverageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverageViewModel.swift; sourceTree = "<group>"; };
+		EBE61E7528283B9900DEF18D /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		EBF1EF712824CD19008A116D /* OnboardingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
+		EBF1EF722824CD19008A116D /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		EBF1EF732824CD19008A116D /* OnboardingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnboardingCell.xib; sourceTree = "<group>"; };
+		EBF1EF742824CD19008A116D /* OnboardingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnboardingView.xib; sourceTree = "<group>"; };
+		EBF1EF792824CEB5008A116D /* HomeCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell2.swift; sourceTree = "<group>"; };
+		EBF1EF7A2824CEB5008A116D /* HomeCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell2.xib; sourceTree = "<group>"; };
+		EBF1EF7B2824CEB5008A116D /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		EBF1EF7C2824CEB5008A116D /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EBF1EF7D2824CEB5008A116D /* HomeCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell1.xib; sourceTree = "<group>"; };
+		EBF1EF7E2824CEB5008A116D /* HomeCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell1.swift; sourceTree = "<group>"; };
+		EBF1EF852824D27E008A116D /* DescriptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionView.xib; sourceTree = "<group>"; };
+		EBF1EF862824D27E008A116D /* DescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +101,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E299B20E7CE6106E00F228 /* Pods_erni_insurance.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71B4F825E17D255CE00F1568 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B833EE2C29BB1D46B945BF87 /* Pods-erni-insurance.debug.xcconfig */,
+				278E665822D37342972DF164 /* Pods-erni-insurance.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EBB788582822475F002BEEAD = {
 			isa = PBXGroup;
 			children = (
 				EBB788632822475F002BEEAD /* erni-insurance */,
 				EBB788622822475F002BEEAD /* Products */,
+				71B4F825E17D255CE00F1568 /* Pods */,
+				FC893549A130F6591A94096B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +138,144 @@
 		EBB788632822475F002BEEAD /* erni-insurance */ = {
 			isa = PBXGroup;
 			children = (
+				EBCDD1C72828BC070077432F /* Application */,
+				EBE60DE3282388D400D47EF4 /* Service */,
+				EBE60DE2282388C700D47EF4 /* ViewModel */,
+				EBE60DE1282388B900D47EF4 /* View */,
+				EBE60DE0282388AC00D47EF4 /* Model */,
+			);
+			path = "erni-insurance";
+			sourceTree = "<group>";
+		};
+		EBCDD1C72828BC070077432F /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				EBB788642822475F002BEEAD /* AppDelegate.swift */,
-				EBB788662822475F002BEEAD /* SceneDelegate.swift */,
-				EBB788682822475F002BEEAD /* ViewController.swift */,
-				EBB7886A2822475F002BEEAD /* Main.storyboard */,
 				EBB7886D28224762002BEEAD /* Assets.xcassets */,
 				EBB7886F28224762002BEEAD /* LaunchScreen.storyboard */,
 				EBB7887228224762002BEEAD /* Info.plist */,
+				EBCB33892827F7840090D982 /* AppConfig.swift */,
 			);
-			path = "erni-insurance";
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EBE60DE0282388AC00D47EF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBD30003282757A200876343 /* InsuranceModel.swift */,
+				EBE61E7128282BFC00DEF18D /* CoverageModel.swift */,
+				EBCDD1C82828FA8C0077432F /* OnboardingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EBE60DE1282388B900D47EF4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBF1EF702824BF90008A116D /* Description */,
+				EBF1EF6F2824BF78008A116D /* Details */,
+				EBF1EF6E2824BF69008A116D /* Search */,
+				EBF1EF6D2824BE9C008A116D /* Onboarding */,
+				EBE60DFA2823A0AE00D47EF4 /* Home */,
+				EBE60DE428238B6A00D47EF4 /* Utilities */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EBE60DE2282388C700D47EF4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EBD300052827584C00876343 /* InsuranceViewModel.swift */,
+				EBE61E7328282F6E00DEF18D /* CoverageViewModel.swift */,
+				EBE61E7528283B9900DEF18D /* SearchViewModel.swift */,
+				EBCDD1CA2828FB4E0077432F /* OnboardingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EBE60DE3282388D400D47EF4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EBD300012827565700876343 /* ApiService.swift */,
+				EBCB33872827F6880090D982 /* ApiRouter.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EBE60DE428238B6A00D47EF4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EBCDD1C32828A5300077432F /* UIViewController+Extension.swift */,
+				EBE60DE528238B9600D47EF4 /* AppColor.swift */,
+				EBE60DE928238C3000D47EF4 /* NavController.swift */,
+				EBE60DEC28238C6B00D47EF4 /* UIView+Extension.swift */,
+				EBE60DEE28238CB000D47EF4 /* UITextField+Extension.swift */,
+				EBE60DF028238CD000D47EF4 /* UIImageView+Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EBE60DFA2823A0AE00D47EF4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EBF1EF7E2824CEB5008A116D /* HomeCell1.swift */,
+				EBF1EF7D2824CEB5008A116D /* HomeCell1.xib */,
+				EBF1EF792824CEB5008A116D /* HomeCell2.swift */,
+				EBF1EF7A2824CEB5008A116D /* HomeCell2.xib */,
+				EBF1EF7C2824CEB5008A116D /* HomeView.swift */,
+				EBF1EF7B2824CEB5008A116D /* HomeView.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EBF1EF6D2824BE9C008A116D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EBF1EF712824CD19008A116D /* OnboardingCell.swift */,
+				EBF1EF732824CD19008A116D /* OnboardingCell.xib */,
+				EBF1EF722824CD19008A116D /* OnboardingView.swift */,
+				EBF1EF742824CD19008A116D /* OnboardingView.xib */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EBF1EF6E2824BF69008A116D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				EBBF97AF28259BF900AFD767 /* SearchCell.swift */,
+				EBBF97B128259BF900AFD767 /* SearchCell.xib */,
+				EBBF97B228259BF900AFD767 /* SearchView.swift */,
+				EBBF97B028259BF900AFD767 /* SearchView.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		EBF1EF6F2824BF78008A116D /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				EBD766492826E42A00E65BCB /* DetailsCell.swift */,
+				EBD7664C2826E42A00E65BCB /* DetailsCell.xib */,
+				EBD7664B2826E42A00E65BCB /* DetailsView.swift */,
+				EBD7664A2826E42A00E65BCB /* DetailsView.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		EBF1EF702824BF90008A116D /* Description */ = {
+			isa = PBXGroup;
+			children = (
+				EBF1EF862824D27E008A116D /* DescriptionView.swift */,
+				EBF1EF852824D27E008A116D /* DescriptionView.xib */,
+			);
+			path = Description;
+			sourceTree = "<group>";
+		};
+		FC893549A130F6591A94096B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65E8E7EEA553381221CDEF95 /* Pods_erni_insurance.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBB7887528224762002BEEAD /* Build configuration list for PBXNativeTarget "erni-insurance" */;
 			buildPhases = (
+				4F38C6D6732E4C7EF1812EAD /* [CP] Check Pods Manifest.lock */,
 				EBB7885D2822475F002BEEAD /* Sources */,
 				EBB7885E2822475F002BEEAD /* Frameworks */,
 				EBB7885F2822475F002BEEAD /* Resources */,
+				2432ADA77C162A3EDD8A1391 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +316,7 @@
 				};
 			};
 			buildConfigurationList = EBB7885C2822475F002BEEAD /* Build configuration list for PBXProject "erni-insurance" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -126,35 +339,107 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBB7887128224762002BEEAD /* LaunchScreen.storyboard in Resources */,
+				EBF1EF832824CEB5008A116D /* HomeCell1.xib in Resources */,
+				EBF1EF772824CD19008A116D /* OnboardingCell.xib in Resources */,
 				EBB7886E28224762002BEEAD /* Assets.xcassets in Resources */,
-				EBB7886C2822475F002BEEAD /* Main.storyboard in Resources */,
+				EBF1EF802824CEB5008A116D /* HomeCell2.xib in Resources */,
+				EBBF97B528259BF900AFD767 /* SearchCell.xib in Resources */,
+				EBD7664E2826E42A00E65BCB /* DetailsView.xib in Resources */,
+				EBBF97B428259BF900AFD767 /* SearchView.xib in Resources */,
+				EBD766502826E42A00E65BCB /* DetailsCell.xib in Resources */,
+				EBF1EF782824CD19008A116D /* OnboardingView.xib in Resources */,
+				EBF1EF872824D27E008A116D /* DescriptionView.xib in Resources */,
+				EBF1EF812824CEB5008A116D /* HomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2432ADA77C162A3EDD8A1391 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-erni-insurance/Pods-erni-insurance-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-erni-insurance/Pods-erni-insurance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F38C6D6732E4C7EF1812EAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-erni-insurance-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EBB7885D2822475F002BEEAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBB788692822475F002BEEAD /* ViewController.swift in Sources */,
+				EBD30004282757A200876343 /* InsuranceModel.swift in Sources */,
+				EBCB338A2827F7840090D982 /* AppConfig.swift in Sources */,
+				EBF1EF842824CEB5008A116D /* HomeCell1.swift in Sources */,
+				EBD7664F2826E42A00E65BCB /* DetailsView.swift in Sources */,
+				EBCDD1CB2828FB4E0077432F /* OnboardingViewModel.swift in Sources */,
+				EBE60DED28238C6B00D47EF4 /* UIView+Extension.swift in Sources */,
+				EBE60DE628238B9700D47EF4 /* AppColor.swift in Sources */,
+				EBE61E7228282BFC00DEF18D /* CoverageModel.swift in Sources */,
+				EBE61E7428282F6E00DEF18D /* CoverageViewModel.swift in Sources */,
+				EBBF97B328259BF900AFD767 /* SearchCell.swift in Sources */,
+				EBE60DF128238CD000D47EF4 /* UIImageView+Extension.swift in Sources */,
+				EBF1EF7F2824CEB5008A116D /* HomeCell2.swift in Sources */,
 				EBB788652822475F002BEEAD /* AppDelegate.swift in Sources */,
-				EBB788672822475F002BEEAD /* SceneDelegate.swift in Sources */,
+				EBF1EF752824CD19008A116D /* OnboardingCell.swift in Sources */,
+				EBF1EF822824CEB5008A116D /* HomeView.swift in Sources */,
+				EBD300062827584C00876343 /* InsuranceViewModel.swift in Sources */,
+				EBCB33882827F6880090D982 /* ApiRouter.swift in Sources */,
+				EBBF97B628259BF900AFD767 /* SearchView.swift in Sources */,
+				EBD7664D2826E42A00E65BCB /* DetailsCell.swift in Sources */,
+				EBE61E7628283B9900DEF18D /* SearchViewModel.swift in Sources */,
+				EBCDD1C42828A5300077432F /* UIViewController+Extension.swift in Sources */,
+				EBE60DEF28238CB000D47EF4 /* UITextField+Extension.swift in Sources */,
+				EBD300022827565700876343 /* ApiService.swift in Sources */,
+				EBE60DEA28238C3000D47EF4 /* NavController.swift in Sources */,
+				EBF1EF762824CD19008A116D /* OnboardingView.swift in Sources */,
+				EBCDD1C92828FA8C0077432F /* OnboardingModel.swift in Sources */,
+				EBF1EF882824D27E008A116D /* DescriptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EBB7886A2822475F002BEEAD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EBB7886B2822475F002BEEAD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EBB7886F28224762002BEEAD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -172,7 +457,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -203,7 +488,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -233,7 +518,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -264,7 +549,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -284,19 +569,22 @@
 		};
 		EBB7887628224762002BEEAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B833EE2C29BB1D46B945BF87 /* Pods-erni-insurance.debug.xcconfig */;
 			buildSettings = {
+				API_BASE_URL = "https://erni-insurance.herokuapp.com/api";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2A26KBG984;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "erni-insurance/Info.plist";
+				INFOPLIST_FILE = "erni-insurance/Application/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,19 +600,22 @@
 		};
 		EBB7887728224762002BEEAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 278E665822D37342972DF164 /* Pods-erni-insurance.release.xcconfig */;
 			buildSettings = {
+				API_BASE_URL = "https://erni-insurance.herokuapp.com/api";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2A26KBG984;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "erni-insurance/Info.plist";
+				INFOPLIST_FILE = "erni-insurance/Application/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
