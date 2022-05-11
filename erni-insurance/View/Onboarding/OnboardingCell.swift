@@ -18,9 +18,9 @@ class OnboardingCell: UICollectionViewCell {
         labelTitle.text = data.title
         labelDescription.text = data.description
         
-        imageView.kf.indicatorType = .activity
         imageView.layer.cornerRadius = imageView.frame.size.width / 2
         imageView.layer.masksToBounds = true
+        imageView.kf.indicatorType = .activity
         imageView.kf.setImage(with: URL(string: data.image))
        
 	}

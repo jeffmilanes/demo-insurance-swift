@@ -52,7 +52,7 @@ enum ApiRouter: URLRequestConvertible {
     // MARK: - URLRequestConvertible
     func asURLRequest() throws -> URLRequest {
         
-        let url = try AppConfig.ProductionServer.baseURL.asURL()
+        let url = try ApiEndpoints.baseUrl.asURL()
         
         var urlRequest = URLRequest(url: url.appendingPathComponent(path))
         

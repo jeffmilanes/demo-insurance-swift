@@ -21,6 +21,8 @@ class HomeView: UIViewController {
 
 		super.viewDidLoad()
         
+        labelTitle.text = "Insurance Demo".localized()
+        
         self.showSpinner()
         
 		navigationItem.leftBarButtonItem = UIBarButtonItem(customView: viewTitle)

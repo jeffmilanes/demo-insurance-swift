@@ -1,0 +1,20 @@
+ /* 
+  Localizable.strings
+  erni-insurance
+
+  Created by jeffrey milanes on 5/11/22.
+  
+*/
+ 
+"Insurance Demo" = "Insurance Demo";
+"Skip" = "Skip";
+"Next" = "Next";
+"Search" = "Search";
+"Find what's best for your needs" = "Find what's best for your needs";
+"Benefits" = "Benefits";
+"Premium" = "Premium";
+"Additional Information" = "Additional Information";
+"Buy your insurance" = "Buy your insurance";
+"Coming soon" = "Coming soon";
+"This feature is not yet available" = "This feature is not yet available";
+"Ok" = "Ok";

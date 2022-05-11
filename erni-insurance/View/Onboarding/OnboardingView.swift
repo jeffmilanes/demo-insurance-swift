@@ -26,6 +26,8 @@ class OnboardingView: UIViewController {
         self.showSpinner()
 
 		collectionView.register(UINib(nibName: "OnboardingCell", bundle: nil), forCellWithReuseIdentifier: "OnboardingCell")
+        
+        skipButton.setTitle("Skip".localized(), for: .normal)
 
 		pageControl.pageIndicatorTintColor = UIColor.lightGray
 		pageControl.currentPageIndicatorTintColor = AppColor.Theme
@@ -95,7 +97,7 @@ extension OnboardingView: UICollectionViewDelegate {
 
 	func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if (indexPath.row == vm.onboarding.count - 1) {
-            skipButton.setTitle("Next", for: .normal)
+            skipButton.setTitle("Next".localized(), for: .normal)
         }
 
 		pageControl.currentPage = indexPath.row

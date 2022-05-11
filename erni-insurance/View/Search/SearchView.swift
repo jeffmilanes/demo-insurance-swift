@@ -8,10 +8,14 @@
 import UIKit
 
 class SearchView: UIViewController {
-
+    
+    @IBOutlet weak var titleSearch: UILabel!
+    @IBOutlet weak var titleDescription: UILabel!
+    
 	@IBOutlet var viewHeader: UIView!
 	@IBOutlet var searchBar: UISearchBar!
 	@IBOutlet var tableView: UITableView!
+
     
     var debounceTimer: Timer?
     
@@ -24,6 +28,10 @@ class SearchView: UIViewController {
 		super.viewDidLoad()
         
         searchBar.delegate = self
+        
+        searchBar.placeholder = "Search".localized()
+        titleSearch.text = "Search".localized()
+        titleDescription.text = "Find what's best for your needs".localized()
 
 		navigationBackgroundImage = navigationController?.navigationBar.backgroundImage(for: .default)
 		navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)

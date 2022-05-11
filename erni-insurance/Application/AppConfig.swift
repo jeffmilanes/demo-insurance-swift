@@ -7,14 +7,6 @@
 
 import Foundation
 
-struct AppConfig {
-    
-    struct ProductionServer {
-        
-        static let baseURL = Bundle.main.object(forInfoDictionaryKey: "ApiBaseURL") as! String
-    }
-}
-
 enum HTTPHeaderField: String {
     
     case authentication = "Authorization"

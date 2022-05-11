@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		58E299B20E7CE6106E00F228 /* Pods_erni_insurance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E8E7EEA553381221CDEF95 /* Pods_erni_insurance.framework */; };
+		EB3C2064282B4CF100B3DEE9 /* ApiEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3C2063282B4CF100B3DEE9 /* ApiEndpoints.swift */; };
+		EB3C2066282B4F4E00B3DEE9 /* EnvironmentVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3C2065282B4F4E00B3DEE9 /* EnvironmentVariables.swift */; };
+		EB3C206B282B61E900B3DEE9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB3C206D282B61E900B3DEE9 /* Localizable.strings */; };
+		EB3C2070282B627C00B3DEE9 /* NSLocalizedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3C206F282B627C00B3DEE9 /* NSLocalizedString+Extension.swift */; };
 		EBB788652822475F002BEEAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB788642822475F002BEEAD /* AppDelegate.swift */; };
 		EBB7886E28224762002BEEAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB7886D28224762002BEEAD /* Assets.xcassets */; };
 		EBB7887128224762002BEEAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB7886F28224762002BEEAD /* LaunchScreen.storyboard */; };
@@ -53,6 +57,11 @@
 		278E665822D37342972DF164 /* Pods-erni-insurance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-erni-insurance.release.xcconfig"; path = "Target Support Files/Pods-erni-insurance/Pods-erni-insurance.release.xcconfig"; sourceTree = "<group>"; };
 		65E8E7EEA553381221CDEF95 /* Pods_erni_insurance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_erni_insurance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B833EE2C29BB1D46B945BF87 /* Pods-erni-insurance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-erni-insurance.debug.xcconfig"; path = "Target Support Files/Pods-erni-insurance/Pods-erni-insurance.debug.xcconfig"; sourceTree = "<group>"; };
+		EB3C2063282B4CF100B3DEE9 /* ApiEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoints.swift; sourceTree = "<group>"; };
+		EB3C2065282B4F4E00B3DEE9 /* EnvironmentVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentVariables.swift; sourceTree = "<group>"; };
+		EB3C206C282B61E900B3DEE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EB3C206E282B61F300B3DEE9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EB3C206F282B627C00B3DEE9 /* NSLocalizedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLocalizedString+Extension.swift"; sourceTree = "<group>"; };
 		EBB788612822475F002BEEAD /* erni-insurance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "erni-insurance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB788642822475F002BEEAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBB7886D28224762002BEEAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +126,33 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EB3C2061282B4C4500B3DEE9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EB3C2062282B4CD100B3DEE9 /* Constants */,
+				EB3C2067282B5FBC00B3DEE9 /* Localization */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EB3C2062282B4CD100B3DEE9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EB3C2063282B4CF100B3DEE9 /* ApiEndpoints.swift */,
+				EB3C2065282B4F4E00B3DEE9 /* EnvironmentVariables.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		EB3C2067282B5FBC00B3DEE9 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				EB3C206D282B61E900B3DEE9 /* Localizable.strings */,
+				EB3C206F282B627C00B3DEE9 /* NSLocalizedString+Extension.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		EBB788582822475F002BEEAD = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +174,7 @@
 		EBB788632822475F002BEEAD /* erni-insurance */ = {
 			isa = PBXGroup;
 			children = (
+				EB3C2061282B4C4500B3DEE9 /* Common */,
 				EBCDD1C72828BC070077432F /* Application */,
 				EBE60DE3282388D400D47EF4 /* Service */,
 				EBE60DE2282388C700D47EF4 /* ViewModel */,
@@ -322,6 +359,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = EBB788582822475F002BEEAD;
 			productRefGroup = EBB788622822475F002BEEAD /* Products */;
@@ -347,6 +385,7 @@
 				EBD7664E2826E42A00E65BCB /* DetailsView.xib in Resources */,
 				EBBF97B428259BF900AFD767 /* SearchView.xib in Resources */,
 				EBD766502826E42A00E65BCB /* DetailsCell.xib in Resources */,
+				EB3C206B282B61E900B3DEE9 /* Localizable.strings in Resources */,
 				EBF1EF782824CD19008A116D /* OnboardingView.xib in Resources */,
 				EBF1EF872824D27E008A116D /* DescriptionView.xib in Resources */,
 				EBF1EF812824CEB5008A116D /* HomeView.xib in Resources */,
@@ -419,6 +458,7 @@
 				EBBF97B328259BF900AFD767 /* SearchCell.swift in Sources */,
 				EBE60DF128238CD000D47EF4 /* UIImageView+Extension.swift in Sources */,
 				EBF1EF7F2824CEB5008A116D /* HomeCell2.swift in Sources */,
+				EB3C2070282B627C00B3DEE9 /* NSLocalizedString+Extension.swift in Sources */,
 				EBB788652822475F002BEEAD /* AppDelegate.swift in Sources */,
 				EBF1EF752824CD19008A116D /* OnboardingCell.swift in Sources */,
 				EBF1EF822824CEB5008A116D /* HomeView.swift in Sources */,
@@ -430,8 +470,10 @@
 				EBCDD1C42828A5300077432F /* UIViewController+Extension.swift in Sources */,
 				EBE60DEF28238CB000D47EF4 /* UITextField+Extension.swift in Sources */,
 				EBD300022827565700876343 /* ApiService.swift in Sources */,
+				EB3C2064282B4CF100B3DEE9 /* ApiEndpoints.swift in Sources */,
 				EBE60DEA28238C3000D47EF4 /* NavController.swift in Sources */,
 				EBF1EF762824CD19008A116D /* OnboardingView.swift in Sources */,
+				EB3C2066282B4F4E00B3DEE9 /* EnvironmentVariables.swift in Sources */,
 				EBCDD1C92828FA8C0077432F /* OnboardingModel.swift in Sources */,
 				EBF1EF882824D27E008A116D /* DescriptionView.swift in Sources */,
 			);
@@ -440,6 +482,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		EB3C206D282B61E900B3DEE9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB3C206C282B61E900B3DEE9 /* en */,
+				EB3C206E282B61F300B3DEE9 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		EBB7886F28224762002BEEAD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -455,6 +506,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
@@ -516,6 +568,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
@@ -560,6 +613,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -571,27 +625,31 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B833EE2C29BB1D46B945BF87 /* Pods-erni-insurance.debug.xcconfig */;
 			buildSettings = {
-				API_BASE_URL = "https://erni-insurance.herokuapp.com/api";
+				APP_SERVER_URL = "https://erni-insurance.herokuapp.com";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2A26KBG984;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "erni-insurance/Application/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Insurance;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "erni.betterask.erni-insurance";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.erni.erniInsuranceDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Erni Mobile Generic Development";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -602,27 +660,31 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 278E665822D37342972DF164 /* Pods-erni-insurance.release.xcconfig */;
 			buildSettings = {
-				API_BASE_URL = "https://erni-insurance.herokuapp.com/api";
+				APP_SERVER_URL = "https://erni-insurance.herokuapp.com";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2A26KBG984;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "erni-insurance/Application/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Insurance;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "erni.betterask.erni-insurance";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.erni.erniInsuranceDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Erni Mobile Generic Distribution";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

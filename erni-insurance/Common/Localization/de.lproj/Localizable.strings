@@ -1,0 +1,20 @@
+/*
+  Localizable.strings
+  erni-insurance
+
+  Created by jeffrey milanes on 5/11/22.
+  
+*/
+
+"Insurance Demo" = "Versicherung Demo";
+"Skip" = "Überspringen";
+"Next" = "Weiter";
+"Search" = "Suche";
+"Find what's best for your needs" = "Finden Sie das Beste für Ihre Bedürfnisse";
+"Benefits" = "Vorteile";
+"Premium" = "Prämie";
+"Additional Information" = "Zusätzliche Informationen";
+"Buy your insurance" = "Kaufen Sie Ihre Versicherung";
+"Coming soon" = "Demnächst verfügbar";
+"This feature is not yet available" = "Diese Funktion ist noch nicht verfügbar";
+"Ok" = "Ok";
