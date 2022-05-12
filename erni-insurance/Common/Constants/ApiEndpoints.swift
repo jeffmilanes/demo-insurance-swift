@@ -11,6 +11,6 @@ struct ApiEndpoints {
     static let baseUrl = "\(EnvironmentVariables.appServerUrl)/api"
     static let onBoardings = "/onboarding/all"
     static let insurances = "/insurance/all"
-    static let searchInsurance = "/insurance/search"
-    static let coverages = "/insurance/coverage"
+    static let searchInsurance = "/insurance/search/"
+    static let coverages = "/insurance/coverage/"
 }

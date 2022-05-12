@@ -12,6 +12,8 @@
 		EB3C2066282B4F4E00B3DEE9 /* EnvironmentVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3C2065282B4F4E00B3DEE9 /* EnvironmentVariables.swift */; };
 		EB3C206B282B61E900B3DEE9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB3C206D282B61E900B3DEE9 /* Localizable.strings */; };
 		EB3C2070282B627C00B3DEE9 /* NSLocalizedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3C206F282B627C00B3DEE9 /* NSLocalizedString+Extension.swift */; };
+		EB9C2EF2282B77BE00C607EA /* InsuranceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9C2EF1282B77BE00C607EA /* InsuranceService.swift */; };
+		EB9C2EF4282B78B700C607EA /* OnboardingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9C2EF3282B78B700C607EA /* OnboardingService.swift */; };
 		EBB788652822475F002BEEAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB788642822475F002BEEAD /* AppDelegate.swift */; };
 		EBB7886E28224762002BEEAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB7886D28224762002BEEAD /* Assets.xcassets */; };
 		EBB7887128224762002BEEAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB7886F28224762002BEEAD /* LaunchScreen.storyboard */; };
@@ -19,12 +21,11 @@
 		EBBF97B428259BF900AFD767 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBBF97B028259BF900AFD767 /* SearchView.xib */; };
 		EBBF97B528259BF900AFD767 /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBBF97B128259BF900AFD767 /* SearchCell.xib */; };
 		EBBF97B628259BF900AFD767 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBF97B228259BF900AFD767 /* SearchView.swift */; };
-		EBCB33882827F6880090D982 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB33872827F6880090D982 /* ApiRouter.swift */; };
-		EBCB338A2827F7840090D982 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB33892827F7840090D982 /* AppConfig.swift */; };
+		EBCB33882827F6880090D982 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB33872827F6880090D982 /* WebService.swift */; };
 		EBCDD1C42828A5300077432F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCDD1C32828A5300077432F /* UIViewController+Extension.swift */; };
 		EBCDD1C92828FA8C0077432F /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCDD1C82828FA8C0077432F /* OnboardingModel.swift */; };
 		EBCDD1CB2828FB4E0077432F /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCDD1CA2828FB4E0077432F /* OnboardingViewModel.swift */; };
-		EBD300022827565700876343 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD300012827565700876343 /* ApiService.swift */; };
+		EBD300022827565700876343 /* AlamofireProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD300012827565700876343 /* AlamofireProvider.swift */; };
 		EBD30004282757A200876343 /* InsuranceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD30003282757A200876343 /* InsuranceModel.swift */; };
 		EBD300062827584C00876343 /* InsuranceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD300052827584C00876343 /* InsuranceViewModel.swift */; };
 		EBD7664D2826E42A00E65BCB /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD766492826E42A00E65BCB /* DetailsCell.swift */; };
@@ -39,6 +40,23 @@
 		EBE61E7228282BFC00DEF18D /* CoverageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE61E7128282BFC00DEF18D /* CoverageModel.swift */; };
 		EBE61E7428282F6E00DEF18D /* CoverageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE61E7328282F6E00DEF18D /* CoverageViewModel.swift */; };
 		EBE61E7628283B9900DEF18D /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE61E7528283B9900DEF18D /* SearchViewModel.swift */; };
+		EBF057DF282CC76700B3391D /* GetInsuranceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF057DE282CC76700B3391D /* GetInsuranceContract.swift */; };
+		EBF057E1282CC82900B3391D /* GetInsuranceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF057E0282CC82900B3391D /* GetInsuranceMapper.swift */; };
+		EBF057E3282CC93800B3391D /* GetInsuranceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF057E2282CC93800B3391D /* GetInsuranceEntity.swift */; };
+		EBF057E5282CCA5300B3391D /* OnboardingContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF057E4282CCA5300B3391D /* OnboardingContract.swift */; };
+		EBF057E7282CCA6600B3391D /* GetCoverageContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF057E6282CCA6600B3391D /* GetCoverageContract.swift */; };
+		EBF057E9282CCBF600B3391D /* OnboardingMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF057E8282CCBF600B3391D /* OnboardingMapper.swift */; };
+		EBF057EB282CCC7E00B3391D /* OnboardingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF057EA282CCC7E00B3391D /* OnboardingEntity.swift */; };
+		EBF057ED282CCCCF00B3391D /* CoverageMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF057EC282CCCCF00B3391D /* CoverageMapper.swift */; };
+		EBF057EF282CCCE800B3391D /* GetCoverageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF057EE282CCCE800B3391D /* GetCoverageEntity.swift */; };
+		EBF057F1282CCE1900B3391D /* InsuranceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF057F0282CCE1900B3391D /* InsuranceManager.swift */; };
+		EBF057F3282CCE2900B3391D /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF057F2282CCE2900B3391D /* OnboardingManager.swift */; };
+		EBF057F5282CE84500B3391D /* SearchInsuranceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF057F4282CE84500B3391D /* SearchInsuranceContract.swift */; };
+		EBF057F7282CE9C500B3391D /* SearchInsuranceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF057F6282CE9C500B3391D /* SearchInsuranceEntity.swift */; };
+		EBF057F9282CEB7900B3391D /* SearchInsuranceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF057F8282CEB7900B3391D /* SearchInsuranceMapper.swift */; };
+		EBF05803282CFCE700B3391D /* FindCoverageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF05802282CFCE700B3391D /* FindCoverageEntity.swift */; };
+		EBF05805282CFD3C00B3391D /* FindCoverageContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF05804282CFD3C00B3391D /* FindCoverageContract.swift */; };
+		EBF05807282CFDA400B3391D /* FindCoverageMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF05806282CFDA400B3391D /* FindCoverageMapper.swift */; };
 		EBF1EF752824CD19008A116D /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF1EF712824CD19008A116D /* OnboardingCell.swift */; };
 		EBF1EF762824CD19008A116D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF1EF722824CD19008A116D /* OnboardingView.swift */; };
 		EBF1EF772824CD19008A116D /* OnboardingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF1EF732824CD19008A116D /* OnboardingCell.xib */; };
@@ -62,6 +80,8 @@
 		EB3C206C282B61E900B3DEE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EB3C206E282B61F300B3DEE9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EB3C206F282B627C00B3DEE9 /* NSLocalizedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLocalizedString+Extension.swift"; sourceTree = "<group>"; };
+		EB9C2EF1282B77BE00C607EA /* InsuranceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceService.swift; sourceTree = "<group>"; };
+		EB9C2EF3282B78B700C607EA /* OnboardingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingService.swift; sourceTree = "<group>"; };
 		EBB788612822475F002BEEAD /* erni-insurance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "erni-insurance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB788642822475F002BEEAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBB7886D28224762002BEEAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,12 +91,11 @@
 		EBBF97B028259BF900AFD767 /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
 		EBBF97B128259BF900AFD767 /* SearchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
 		EBBF97B228259BF900AFD767 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		EBCB33872827F6880090D982 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
-		EBCB33892827F7840090D982 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		EBCB33872827F6880090D982 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		EBCDD1C32828A5300077432F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		EBCDD1C82828FA8C0077432F /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		EBCDD1CA2828FB4E0077432F /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
-		EBD300012827565700876343 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		EBD300012827565700876343 /* AlamofireProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireProvider.swift; sourceTree = "<group>"; };
 		EBD30003282757A200876343 /* InsuranceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceModel.swift; sourceTree = "<group>"; };
 		EBD300052827584C00876343 /* InsuranceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceViewModel.swift; sourceTree = "<group>"; };
 		EBD766492826E42A00E65BCB /* DetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsCell.swift; sourceTree = "<group>"; };
@@ -91,6 +110,23 @@
 		EBE61E7128282BFC00DEF18D /* CoverageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverageModel.swift; sourceTree = "<group>"; };
 		EBE61E7328282F6E00DEF18D /* CoverageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverageViewModel.swift; sourceTree = "<group>"; };
 		EBE61E7528283B9900DEF18D /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		EBF057DE282CC76700B3391D /* GetInsuranceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInsuranceContract.swift; sourceTree = "<group>"; };
+		EBF057E0282CC82900B3391D /* GetInsuranceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInsuranceMapper.swift; sourceTree = "<group>"; };
+		EBF057E2282CC93800B3391D /* GetInsuranceEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInsuranceEntity.swift; sourceTree = "<group>"; };
+		EBF057E4282CCA5300B3391D /* OnboardingContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContract.swift; sourceTree = "<group>"; };
+		EBF057E6282CCA6600B3391D /* GetCoverageContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCoverageContract.swift; sourceTree = "<group>"; };
+		EBF057E8282CCBF600B3391D /* OnboardingMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMapper.swift; sourceTree = "<group>"; };
+		EBF057EA282CCC7E00B3391D /* OnboardingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEntity.swift; sourceTree = "<group>"; };
+		EBF057EC282CCCCF00B3391D /* CoverageMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverageMapper.swift; sourceTree = "<group>"; };
+		EBF057EE282CCCE800B3391D /* GetCoverageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCoverageEntity.swift; sourceTree = "<group>"; };
+		EBF057F0282CCE1900B3391D /* InsuranceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceManager.swift; sourceTree = "<group>"; };
+		EBF057F2282CCE2900B3391D /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
+		EBF057F4282CE84500B3391D /* SearchInsuranceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInsuranceContract.swift; sourceTree = "<group>"; };
+		EBF057F6282CE9C500B3391D /* SearchInsuranceEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInsuranceEntity.swift; sourceTree = "<group>"; };
+		EBF057F8282CEB7900B3391D /* SearchInsuranceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInsuranceMapper.swift; sourceTree = "<group>"; };
+		EBF05802282CFCE700B3391D /* FindCoverageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCoverageEntity.swift; sourceTree = "<group>"; };
+		EBF05804282CFD3C00B3391D /* FindCoverageContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCoverageContract.swift; sourceTree = "<group>"; };
+		EBF05806282CFDA400B3391D /* FindCoverageMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCoverageMapper.swift; sourceTree = "<group>"; };
 		EBF1EF712824CD19008A116D /* OnboardingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
 		EBF1EF722824CD19008A116D /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		EBF1EF732824CD19008A116D /* OnboardingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnboardingCell.xib; sourceTree = "<group>"; };
@@ -148,9 +184,116 @@
 			isa = PBXGroup;
 			children = (
 				EB3C206D282B61E900B3DEE9 /* Localizable.strings */,
-				EB3C206F282B627C00B3DEE9 /* NSLocalizedString+Extension.swift */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		EB9C2EEA282B73D800C607EA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB3C206F282B627C00B3DEE9 /* NSLocalizedString+Extension.swift */,
+				EBCDD1C32828A5300077432F /* UIViewController+Extension.swift */,
+				EBE60DEC28238C6B00D47EF4 /* UIView+Extension.swift */,
+				EBE60DEE28238CB000D47EF4 /* UITextField+Extension.swift */,
+				EBE60DF028238CD000D47EF4 /* UIImageView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EB9C2EEC282B762E00C607EA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EBCDD1C72828BC070077432F /* Resources */,
+				EBF057DD282CC44400B3391D /* Utils */,
+				EBE60DE2282388C700D47EF4 /* ViewModel */,
+				EBE60DE1282388B900D47EF4 /* View */,
+				EBE60DE0282388AC00D47EF4 /* Model */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EB9C2EED282B76AD00C607EA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EB9C2EEE282B76CD00C607EA /* Base */,
+				EB9C2EF0282B770300C607EA /* Onboarding */,
+				EB9C2EEF282B76F800C607EA /* Insurance */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EB9C2EEE282B76CD00C607EA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EBCB33872827F6880090D982 /* WebService.swift */,
+				EBD300012827565700876343 /* AlamofireProvider.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EB9C2EEF282B76F800C607EA /* Insurance */ = {
+			isa = PBXGroup;
+			children = (
+				EB9C2EF1282B77BE00C607EA /* InsuranceService.swift */,
+			);
+			path = Insurance;
+			sourceTree = "<group>";
+		};
+		EB9C2EF0282B770300C607EA /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EB9C2EF3282B78B700C607EA /* OnboardingService.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EB9C2EF7282B920000C607EA /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				EBF0580D282D00F900B3391D /* Onboarding */,
+				EBF057FE282CF8B700B3391D /* Coverage */,
+				EBF057FB282CF7B400B3391D /* Insurance */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		EB9C2EF8282B92E800C607EA /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EB9C2EF9282B92F400C607EA /* Entities */,
+				EB9C2EFA282B92FB00C607EA /* Managers */,
+				EB9C2EFB282B930200C607EA /* Mappers */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EB9C2EF9282B92F400C607EA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				EBF0580E282D030C00B3391D /* Onboarding */,
+				EBF057FF282CF8D800B3391D /* Coverage */,
+				EBF057FA282CF5A800B3391D /* Insurance */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		EB9C2EFA282B92FB00C607EA /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EBF05801282CF93100B3391D /* Onboarding */,
+				EBF05800282CF92200B3391D /* Insurance */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		EB9C2EFB282B930200C607EA /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				EBF0580C282D00E000B3391D /* Onboarding */,
+				EBF057FD282CF8A200B3391D /* Coverage */,
+				EBF057FC282CF7F500B3391D /* Insurance */,
+			);
+			path = Mappers;
 			sourceTree = "<group>";
 		};
 		EBB788582822475F002BEEAD = {
@@ -174,26 +317,25 @@
 		EBB788632822475F002BEEAD /* erni-insurance */ = {
 			isa = PBXGroup;
 			children = (
+				EBF057DC282CB6EB00B3391D /* Application */,
 				EB3C2061282B4C4500B3DEE9 /* Common */,
-				EBCDD1C72828BC070077432F /* Application */,
-				EBE60DE3282388D400D47EF4 /* Service */,
-				EBE60DE2282388C700D47EF4 /* ViewModel */,
-				EBE60DE1282388B900D47EF4 /* View */,
-				EBE60DE0282388AC00D47EF4 /* Model */,
+				EB9C2EEC282B762E00C607EA /* Core */,
+				EB9C2EF8282B92E800C607EA /* Domain */,
+				EBE60DE3282388D400D47EF4 /* Web */,
 			);
 			path = "erni-insurance";
 			sourceTree = "<group>";
 		};
-		EBCDD1C72828BC070077432F /* Application */ = {
+		EBCDD1C72828BC070077432F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EBB788642822475F002BEEAD /* AppDelegate.swift */,
+				EBE60DE528238B9600D47EF4 /* AppColor.swift */,
+				EBE60DE928238C3000D47EF4 /* NavController.swift */,
 				EBB7886D28224762002BEEAD /* Assets.xcassets */,
 				EBB7886F28224762002BEEAD /* LaunchScreen.storyboard */,
 				EBB7887228224762002BEEAD /* Info.plist */,
-				EBCB33892827F7840090D982 /* AppConfig.swift */,
 			);
-			path = Application;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		EBE60DE0282388AC00D47EF4 /* Model */ = {
@@ -214,7 +356,6 @@
 				EBF1EF6E2824BF69008A116D /* Search */,
 				EBF1EF6D2824BE9C008A116D /* Onboarding */,
 				EBE60DFA2823A0AE00D47EF4 /* Home */,
-				EBE60DE428238B6A00D47EF4 /* Utilities */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -222,34 +363,21 @@
 		EBE60DE2282388C700D47EF4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				EBD300052827584C00876343 /* InsuranceViewModel.swift */,
-				EBE61E7328282F6E00DEF18D /* CoverageViewModel.swift */,
-				EBE61E7528283B9900DEF18D /* SearchViewModel.swift */,
-				EBCDD1CA2828FB4E0077432F /* OnboardingViewModel.swift */,
+				EBF0580B282CFEEA00B3391D /* Onboarding */,
+				EBF0580A282CFEE000B3391D /* Coverage */,
+				EBF05809282CFECD00B3391D /* Search */,
+				EBF05808282CFEA500B3391D /* Insurance */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		EBE60DE3282388D400D47EF4 /* Service */ = {
+		EBE60DE3282388D400D47EF4 /* Web */ = {
 			isa = PBXGroup;
 			children = (
-				EBD300012827565700876343 /* ApiService.swift */,
-				EBCB33872827F6880090D982 /* ApiRouter.swift */,
+				EB9C2EF7282B920000C607EA /* Contracts */,
+				EB9C2EED282B76AD00C607EA /* Services */,
 			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		EBE60DE428238B6A00D47EF4 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				EBCDD1C32828A5300077432F /* UIViewController+Extension.swift */,
-				EBE60DE528238B9600D47EF4 /* AppColor.swift */,
-				EBE60DE928238C3000D47EF4 /* NavController.swift */,
-				EBE60DEC28238C6B00D47EF4 /* UIView+Extension.swift */,
-				EBE60DEE28238CB000D47EF4 /* UITextField+Extension.swift */,
-				EBE60DF028238CD000D47EF4 /* UIImageView+Extension.swift */,
-			);
-			path = Utilities;
+			path = Web;
 			sourceTree = "<group>";
 		};
 		EBE60DFA2823A0AE00D47EF4 /* Home */ = {
@@ -263,6 +391,148 @@
 				EBF1EF7B2824CEB5008A116D /* HomeView.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		EBF057DC282CB6EB00B3391D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EBB788642822475F002BEEAD /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EBF057DD282CC44400B3391D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EB9C2EEA282B73D800C607EA /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EBF057FA282CF5A800B3391D /* Insurance */ = {
+			isa = PBXGroup;
+			children = (
+				EBF057E2282CC93800B3391D /* GetInsuranceEntity.swift */,
+				EBF057F6282CE9C500B3391D /* SearchInsuranceEntity.swift */,
+			);
+			path = Insurance;
+			sourceTree = "<group>";
+		};
+		EBF057FB282CF7B400B3391D /* Insurance */ = {
+			isa = PBXGroup;
+			children = (
+				EBF057DE282CC76700B3391D /* GetInsuranceContract.swift */,
+				EBF057F4282CE84500B3391D /* SearchInsuranceContract.swift */,
+			);
+			path = Insurance;
+			sourceTree = "<group>";
+		};
+		EBF057FC282CF7F500B3391D /* Insurance */ = {
+			isa = PBXGroup;
+			children = (
+				EBF057E0282CC82900B3391D /* GetInsuranceMapper.swift */,
+				EBF057F8282CEB7900B3391D /* SearchInsuranceMapper.swift */,
+			);
+			path = Insurance;
+			sourceTree = "<group>";
+		};
+		EBF057FD282CF8A200B3391D /* Coverage */ = {
+			isa = PBXGroup;
+			children = (
+				EBF057EC282CCCCF00B3391D /* CoverageMapper.swift */,
+				EBF05806282CFDA400B3391D /* FindCoverageMapper.swift */,
+			);
+			path = Coverage;
+			sourceTree = "<group>";
+		};
+		EBF057FE282CF8B700B3391D /* Coverage */ = {
+			isa = PBXGroup;
+			children = (
+				EBF057E6282CCA6600B3391D /* GetCoverageContract.swift */,
+				EBF05804282CFD3C00B3391D /* FindCoverageContract.swift */,
+			);
+			path = Coverage;
+			sourceTree = "<group>";
+		};
+		EBF057FF282CF8D800B3391D /* Coverage */ = {
+			isa = PBXGroup;
+			children = (
+				EBF057EE282CCCE800B3391D /* GetCoverageEntity.swift */,
+				EBF05802282CFCE700B3391D /* FindCoverageEntity.swift */,
+			);
+			path = Coverage;
+			sourceTree = "<group>";
+		};
+		EBF05800282CF92200B3391D /* Insurance */ = {
+			isa = PBXGroup;
+			children = (
+				EBF057F2282CCE2900B3391D /* OnboardingManager.swift */,
+			);
+			path = Insurance;
+			sourceTree = "<group>";
+		};
+		EBF05801282CF93100B3391D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EBF057F0282CCE1900B3391D /* InsuranceManager.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EBF05808282CFEA500B3391D /* Insurance */ = {
+			isa = PBXGroup;
+			children = (
+				EBD300052827584C00876343 /* InsuranceViewModel.swift */,
+			);
+			path = Insurance;
+			sourceTree = "<group>";
+		};
+		EBF05809282CFECD00B3391D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				EBE61E7528283B9900DEF18D /* SearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		EBF0580A282CFEE000B3391D /* Coverage */ = {
+			isa = PBXGroup;
+			children = (
+				EBE61E7328282F6E00DEF18D /* CoverageViewModel.swift */,
+			);
+			path = Coverage;
+			sourceTree = "<group>";
+		};
+		EBF0580B282CFEEA00B3391D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EBCDD1CA2828FB4E0077432F /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EBF0580C282D00E000B3391D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EBF057E8282CCBF600B3391D /* OnboardingMapper.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EBF0580D282D00F900B3391D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EBF057E4282CCA5300B3391D /* OnboardingContract.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EBF0580E282D030C00B3391D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EBF057EA282CCC7E00B3391D /* OnboardingEntity.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		EBF1EF6D2824BE9C008A116D /* Onboarding */ = {
@@ -446,36 +716,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF05805282CFD3C00B3391D /* FindCoverageContract.swift in Sources */,
 				EBD30004282757A200876343 /* InsuranceModel.swift in Sources */,
-				EBCB338A2827F7840090D982 /* AppConfig.swift in Sources */,
 				EBF1EF842824CEB5008A116D /* HomeCell1.swift in Sources */,
+				EBF057F1282CCE1900B3391D /* InsuranceManager.swift in Sources */,
+				EBF057F9282CEB7900B3391D /* SearchInsuranceMapper.swift in Sources */,
+				EB9C2EF2282B77BE00C607EA /* InsuranceService.swift in Sources */,
 				EBD7664F2826E42A00E65BCB /* DetailsView.swift in Sources */,
 				EBCDD1CB2828FB4E0077432F /* OnboardingViewModel.swift in Sources */,
 				EBE60DED28238C6B00D47EF4 /* UIView+Extension.swift in Sources */,
 				EBE60DE628238B9700D47EF4 /* AppColor.swift in Sources */,
+				EBF057E3282CC93800B3391D /* GetInsuranceEntity.swift in Sources */,
 				EBE61E7228282BFC00DEF18D /* CoverageModel.swift in Sources */,
 				EBE61E7428282F6E00DEF18D /* CoverageViewModel.swift in Sources */,
 				EBBF97B328259BF900AFD767 /* SearchCell.swift in Sources */,
 				EBE60DF128238CD000D47EF4 /* UIImageView+Extension.swift in Sources */,
+				EBF057E9282CCBF600B3391D /* OnboardingMapper.swift in Sources */,
 				EBF1EF7F2824CEB5008A116D /* HomeCell2.swift in Sources */,
 				EB3C2070282B627C00B3DEE9 /* NSLocalizedString+Extension.swift in Sources */,
+				EBF05803282CFCE700B3391D /* FindCoverageEntity.swift in Sources */,
+				EBF057E1282CC82900B3391D /* GetInsuranceMapper.swift in Sources */,
 				EBB788652822475F002BEEAD /* AppDelegate.swift in Sources */,
+				EB9C2EF4282B78B700C607EA /* OnboardingService.swift in Sources */,
 				EBF1EF752824CD19008A116D /* OnboardingCell.swift in Sources */,
 				EBF1EF822824CEB5008A116D /* HomeView.swift in Sources */,
 				EBD300062827584C00876343 /* InsuranceViewModel.swift in Sources */,
-				EBCB33882827F6880090D982 /* ApiRouter.swift in Sources */,
+				EBCB33882827F6880090D982 /* WebService.swift in Sources */,
 				EBBF97B628259BF900AFD767 /* SearchView.swift in Sources */,
+				EBF057F7282CE9C500B3391D /* SearchInsuranceEntity.swift in Sources */,
 				EBD7664D2826E42A00E65BCB /* DetailsCell.swift in Sources */,
 				EBE61E7628283B9900DEF18D /* SearchViewModel.swift in Sources */,
 				EBCDD1C42828A5300077432F /* UIViewController+Extension.swift in Sources */,
+				EBF057E5282CCA5300B3391D /* OnboardingContract.swift in Sources */,
 				EBE60DEF28238CB000D47EF4 /* UITextField+Extension.swift in Sources */,
-				EBD300022827565700876343 /* ApiService.swift in Sources */,
+				EBF057DF282CC76700B3391D /* GetInsuranceContract.swift in Sources */,
+				EBF057F3282CCE2900B3391D /* OnboardingManager.swift in Sources */,
+				EBD300022827565700876343 /* AlamofireProvider.swift in Sources */,
 				EB3C2064282B4CF100B3DEE9 /* ApiEndpoints.swift in Sources */,
+				EBF05807282CFDA400B3391D /* FindCoverageMapper.swift in Sources */,
 				EBE60DEA28238C3000D47EF4 /* NavController.swift in Sources */,
+				EBF057EF282CCCE800B3391D /* GetCoverageEntity.swift in Sources */,
+				EBF057E7282CCA6600B3391D /* GetCoverageContract.swift in Sources */,
+				EBF057EB282CCC7E00B3391D /* OnboardingEntity.swift in Sources */,
 				EBF1EF762824CD19008A116D /* OnboardingView.swift in Sources */,
 				EB3C2066282B4F4E00B3DEE9 /* EnvironmentVariables.swift in Sources */,
+				EBF057ED282CCCCF00B3391D /* CoverageMapper.swift in Sources */,
 				EBCDD1C92828FA8C0077432F /* OnboardingModel.swift in Sources */,
 				EBF1EF882824D27E008A116D /* DescriptionView.swift in Sources */,
+				EBF057F5282CE84500B3391D /* SearchInsuranceContract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,7 +921,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2A26KBG984;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "erni-insurance/Application/Info.plist";
+				INFOPLIST_FILE = "erni-insurance/Core/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Insurance;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -668,7 +956,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2A26KBG984;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "erni-insurance/Application/Info.plist";
+				INFOPLIST_FILE = "erni-insurance/Core/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Insurance;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
